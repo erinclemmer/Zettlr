@@ -119,6 +119,7 @@ const useH1 = computed(() => configStore.config.fileNameDisplay.includes('headin
 const useTitle = computed(() => configStore.config.fileNameDisplay.includes('title'))
 const displayMdExtensions = computed(() => configStore.config.display.markdownFileExtensions)
 const lastLeafId = computed(() => documentTreeStore.lastLeafId)
+recomputeRelatedFiles().catch(err => console.error('Could not recompute related files:', err))
 
 watch(lastActiveFile, () => {
   recomputeRelatedFiles().catch(err => console.error('Could not recompute related files:', err))
