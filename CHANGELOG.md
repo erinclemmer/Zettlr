@@ -34,6 +34,8 @@
   unfolding, `Ctrl-Alt-[` for folding all, and `Ctrl-Alt-]` for unfolding all.
 - Update `fr-FR` translation (#5738).
 - Update `cs-CZ` translation (#5775).
+- Fixed an issue where related files were not showing up when switching to the 
+  related files tab from the side bar (#5789).
 
 ## Under the Hood
 
